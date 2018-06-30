@@ -1,5 +1,5 @@
-# slide-capture
-SlideCaptureは発表スライドを自動で撮影、Twitterへアップするツールです。  
+# Sizuca 
+Sizucaは発表スライドを自動で撮影、Twitterへアップするツールです。  
 スクリーンが撮せる位置にカメラつきRaspberry Piを固定し、ツールを実行することで、全自動でスライドが変わったタイミングを見計らって写真を撮影、Twitterへハッシュタグ付きでアップします。  
 これにより、勉強会の参加者は自分でスライドを枚ずつ撮影する必要がなくなり、発表に集中できるようになります。
 
@@ -27,7 +27,7 @@ TODO: Logic Apps経由で共通のプロジェクト使えるようにできる�
 Raspberry Piにプロジェクトをクローンします。
 
 ```
-$ git clone https://github.com/chooyan-eng/slide-capture.git
+$ git clone https://github.com/chooyan-eng/sizuca.git
 ```
 
 `config.ini`ファイルに、Custom Vision Service APIを利用するための各パラメータを記載します。
@@ -44,7 +44,7 @@ project = b7994564-xxxxxx-xxxxxxx-xxxxxxx-xxxxx
 Blob Storageのアカウントとアクセスキーを環境変数にセットします。
 
 ```
-$ export AZURE_STORAGE_ACCOUNT=slidecapturestorage
+$ export AZURE_STORAGE_ACCOUNT=sizucastorage
 $ export AZURE_STORAGE_ACCESS_KEY=tFs6YohP8Bhxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
